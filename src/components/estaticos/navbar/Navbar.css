@@ -1,6 +1,13 @@
 .menu{
-    background-color: #1684FF;
+    background: linear-gradient(36deg, #ff4f4f 8%, #fce02d 80%)!important;
 }
-.li :hover {
-    color: rgb(6, 1, 20);
+h6:hover {
+    color: rgb(0, 0, 0);
+}
+.text-decorator-none{
+    text-decoration: none;
+}
+.cursor{
+    cursor: pointer;
+    color: white;
 }

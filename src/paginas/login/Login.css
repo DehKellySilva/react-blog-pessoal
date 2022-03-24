@@ -1,0 +1,25 @@
+.textos1{
+    font-weight: bold !important;
+    text-align: center;
+}
+
+.imagem{
+        background-image: url(https://i.imgur.com/RvHqXEa.gif);
+        background-repeat: no-repeat;
+        width: 100vh;
+        min-height: 100vh;
+        background-size: cover; 
+        background-position: center;
+}
+
+.botao{
+    border-color: black;
+    color: #ff4f4f ;
+    color: white ;
+}
+
+.text-decorator-none{
+    text-decoration: none;
+}
+
+
