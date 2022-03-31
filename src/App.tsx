@@ -9,6 +9,10 @@ import './App.css';
 import { minHeight } from '@mui/system';
 import ListaTema from './components/temas/listatema/ListaTema';
 import ListaPostagem from './components/postagens/listapostagem/ListaPostagem';
+import CadastroPost from './components/postagens/cadastroPost/CadastroPost';
+import CadastroTema from './components/temas/cadastroTema/CadastroTema';
+import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
+import DeletarTema from './components/temas/deletarTema/DeletarTema';
 
 
 function App() {
@@ -16,13 +20,13 @@ function App() {
     <Router>
       <Navbar />
       <Switch>
-        <div style={{minHeight: '100vh'}}>
+        <div style={{ minHeight: '100vh' }}>
 
-        <Route exact path='/'>
-            <Login/>
+          <Route exact path='/'>
+            <Login />
           </Route>
 
-        <Route path='/login'>
+          <Route path='/login'>
             <Login />
           </Route>
 
@@ -41,6 +45,31 @@ function App() {
           <Route path='/posts'>
             <ListaPostagem />
           </Route>
+
+          <Route exact path='/formularioPostagem'>
+            <CadastroPost />
+          </Route>
+
+          <Route exact path='/formularioPostagem/:id'>
+            <CadastroPost />
+          </Route>
+
+          <Route exact path='/formularioTema'>
+            <CadastroTema />
+          </Route>
+
+          <Route exact path='/formularioTema/:id'>
+            <CadastroTema />
+          </Route>
+
+          <Route path='/deletarPostagem/:id'>
+            <DeletarPostagem />
+          </Route>
+
+          <Route path='/deletarTema/:id'>
+            <DeletarTema />
+          </Route>
+
         </div>
       </Switch>
       <Footer />

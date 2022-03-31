@@ -1,10 +1,10 @@
 .box1{
-    background: linear-gradient(36deg, #ff4f4f 8%, #fce02d 80%)!important;
+    background: #ff4f4f!important;
     height: 120px;
 }
 
 .box2{
-    background: linear-gradient(36deg, #ff4f4f 8%, #fce02d 80%)!important;
+    background: #ff4f4f!important;
     height: 60px;
 }
 

@@ -1,3 +1,12 @@
 .titulo{
     font-weight: bold;
 }
+
+.caixa2 {
+    background: #fc6868!important;
+}
+
+.corLetras {
+    color: black !important;
+    font-weight: bold !important;
+}

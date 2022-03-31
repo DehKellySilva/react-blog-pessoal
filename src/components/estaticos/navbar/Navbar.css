@@ -1,5 +1,5 @@
 .menu{
-    background: linear-gradient(36deg, #ff4f4f 8%, #fce02d 80%)!important;
+    background:#ff4f4f!important;
 }
 h6:hover {
     color: rgb(0, 0, 0);
@@ -10,4 +10,5 @@ h6:hover {
 .cursor{
     cursor: pointer;
     color: white;
+
 }

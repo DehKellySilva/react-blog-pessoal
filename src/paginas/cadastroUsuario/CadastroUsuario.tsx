@@ -49,9 +49,17 @@ function CadastroUsuario() {
     }
     async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
+
         if (confirmarSenha === user.senha && user.senha.length >= 8) {
-            cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
-            alert('Usuario cadastrado com sucesso')
+
+            try {
+                await cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
+                alert("Usuário cadastrado com sucesso")
+
+            } catch (error) {
+                console.log(`Error: ${error}`)
+                alert("Usuário já existente")
+            }
 
         } else {
             alert('Dados inconsistentes. Favor verificar as informações de cadastro.')
@@ -65,11 +73,11 @@ function CadastroUsuario() {
                     <form onSubmit={onSubmit}>
                         <Typography variant='h3' gutterBottom color='textPrimary' component='h3' className='textos2'>Cadastrar</Typography>
 
-                        <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' label='nome' variant='outlined' name='nome' margin='normal' fullWidth required/>
+                        <TextField value={user.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='nome' label='nome' variant='outlined' name='nome' margin='normal' fullWidth required />
 
-                        <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='usuario' variant='outlined' name='usuario' margin='normal' fullWidth required/>
+                        <TextField value={user.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='usuario' variant='outlined' name='usuario' margin='normal' fullWidth required />
 
-                        <TextField value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth required/>
+                        <TextField value={user.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth required />
 
                         <TextField value={confirmarSenha} onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)} id='confirmarSenha' label='confirmarSenha' variant='outlined' name='confirmarSenha' margin='normal' type='password' fullWidth required />
 
