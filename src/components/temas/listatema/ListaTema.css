@@ -1,0 +1,11 @@
+.text-decorator-none{
+    text-decoration: none;
+}
+
+.botaoAtualizarTema {
+    background-color: rgb(116, 167, 68) !important;
+}
+
+.botaoDeletarTema {
+    background-color: rgb(247, 36, 36) !important;
+}

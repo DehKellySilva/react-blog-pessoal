@@ -1,0 +1,23 @@
+.box1{
+    background: #ff4f4f!important;
+    height: 120px;
+    min-width: calc(160vh - 29px);
+
+}
+
+.box2{
+    background: #ff4f4f!important;
+    height: 60px;
+    min-width: calc(160vh - 29px);
+
+}
+
+.redes{
+    font-size: 60px !important;
+    color: black;   
+}
+
+.textos{
+    color: black;
+    text-align: center;
+}
