@@ -1,0 +1,14 @@
+.titulo{
+    font-weight: bold;
+}
+
+.caixa2 {
+    background: #fc6868!important;
+    align-items: center center !important;
+}
+
+.corLetras {
+    color: black !important;
+    font-weight: bold !important;
+    font-size: 19px !important;
+}

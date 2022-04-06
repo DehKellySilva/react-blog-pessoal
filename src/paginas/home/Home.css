@@ -1,0 +1,49 @@
+.caixa {
+    background-color: white;
+}
+
+.titulo {
+    margin-top: 5% !important;
+    color: black;
+    font-weight: "bold";
+}
+
+.botao {
+    border-color: black !important;
+    background-color: #ff4f4f !important;
+    color: white !important;
+}
+
+.postagens {
+    background-color: white;
+}
+
+.text-decorator-none{
+    text-decoration: none;
+}
+
+.fundoImagem {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4) !important;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: calc(140vh - 64px);
+    min-width: calc(160vh - 30px);
+}
+
+.efeito-vidro {
+   
+    position: absolute;
+    text-align: center center !;
+    bottom: 50px !important;
+    right: 300px !important;
+    width: 400px !important;
+    height: 400px !important;
+    background: rgba(255,255,255,0.4) !important;
+    backdrop-filter: blur(5px) !important;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.2) !important;
+}
